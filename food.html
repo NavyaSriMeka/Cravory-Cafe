@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Bestsellers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #fff3e0, #fef7f0);
+      color: #4b3f2f;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    header {
+      background: #d2691e;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top:0;
+      z-index: 100;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+    }
+    .logo img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      filter: drop-shadow(4px 4px 5px rgba(223, 218, 218, 0.3));
+      margin-right: 20px;
+    }
+    .logo:hover {
+      transform: scale(1.1) ;
+    }
+    .nav-hov {
+      display: flex;
+    }
+    .nav-hov a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    .nav-hov a:hover {
+      background: #f4a261;
+      color: #4b3f2f;
+      transform: scale(1.3);
+    }
+
+    .welcome {
+      height: 500px;
+      background: url('cover.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      transform: scale(0.95) translateY(30px);
+      filter: blur(4px);
+      animation-name: photo;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+    }
+    @keyframes photo {
+      to {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+
+    footer {
+      background: #d2691e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .circle-link{
+        border:1px solid black;
+        border-radius: 50%;
+        
+    }
+    .circles{
+        display: flex;
+        padding: 10px;
+    }
+    .item{
+        height:300px;
+        width:650px;
+        border: 3px solid #2A4759;
+        outline: 1px solid #2A4759;
+        outline-offset: -7px;
+        margin-left:100px;
+        margin-top: 50px;
+        padding:25px;
+    }
+   
+    .items{
+        display: flex;
+        justify-content: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .item-h3{
+      margin-left: 320px; 
+      margin-top: -250px; 
+      color:steelblue;
+    }
+    .item-p{
+      margin-left: 280px; 
+      text-align:justify; 
+      color: black;
+    }
+    .item-cost{
+      margin-left:290px; 
+      margin-top: 30px; 
+      color:#328E6E;
+    }
+    .item-a{
+      text-decoration: none;
+    }
+    .item-div{
+      margin-left: 380px; 
+      margin-top: -25px; 
+      border: 1px solid none; 
+      width: 125px; 
+      padding: 5px; 
+      color:white; 
+      background-color: #328E6E;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="home.html" class="logo">
+      <img src="logo.jpg" alt="Cravory Cafe Logo">
+      Cravory Cafe
+    </a>
+    <nav class="nav-hov">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offers.html">Offers</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </nav>
+  </header>
+
+  <nav class="circles">
+    <a href="bestsellers.html" class="link">
+        <img src="pizzza.jpg" height="80" width="80" class="circle-link" style="margin-left: 350px;"><p style="color: black; margin-left: 345px;">Bestsellers</p>
+    </a><a href="coffee.html" class="link">
+        <img src="coffee.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 55px;">Coffee</p>
+    </a><a href="food.html" class="link">
+        <img src="burger.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 60px;">Food</p>
+    </a><a href="bevarages.html" class="link">
+        <img src="mocktail.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 40px;">Bevarages</p>
+    </a><a href="desserts.html" class="link">
+        <img src="icecream.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 45px;">Desserts</p>
+    </a><a href="deals.html" class="link">
+        <img src="combos.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 20px;">Exclusive Deals</p>
+    </a>
+  </nav>
+  <nav class="items">
+
+
+
+    <div class="item">
+      <img src="food3.avif" height="250px" width="250px">
+      <h3 class="item-h3">11Pc Boneless Wings</h3>
+      <br>
+      <p class="item-p">Tender, juicy chicken bites coated in a crispy golden crust, packed with bold flavour.
+Perfectly shareable or all yours—crafted for pure, saucy satisfaction.
+(11 PC BONELESS WINGS 280 g 620 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 329</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food4.webp" height="250px" width="250px">
+      <h3 class="item-h3">Korean Tangy Chicken Roll</h3>
+      <br>
+      <p class="item-p">Spicy, tangy Korean-style chicken wrapped in a soft, warm roll with fresh veggies and zesty sauce.
+A bold fusion bite crafted for punchy flavour and satisfying crunch.
+(KOREAN TANGY CHICKEN ROLL 200 g 460 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 139</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food1.avif" height="250px" width="250px">
+      <h3 class="item-h3">Chicken Cheese Burger</h3>
+      <br>
+      <p class="item-p">Tender, seasoned chicken patty tucked under a blanket of melted cheese and fresh veggies.
+A creamy, savory blend of textures and taste, crafted to please every craving.
+(CHICKEN CHEESE BURGER 230g 480kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 215</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food5.avif" height="250px" width="250px">
+      <h3 class="item-h3">Smoky Red Grilled Chicken - 2 pc</h3>
+      <br>
+      <p class="item-p">Juicy, tender chicken marinated in smoky, spicy red spices and grilled to perfection.
+A bold, flavour-packed treat crafted to ignite your taste buds with every bite.
+(SMOKY RED GRILLED CHICKEN 2 PC 250 g 480 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 248</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food7.avif" height="250px" width="250px">
+      <h3 class="item-h3">French Fries - Large</h3>
+      <br>
+      <p class="item-p">Golden, crispy fries seasoned to perfection, hot and crunchy with every bite.
+A classic, satisfying side crafted to complement any meal.
+(FRENCH FRIES - LARGE 150 g 450 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 119</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+    <div class="item">
+      <img src="food8.avif" height="250px" width="250px">
+      <h3 class="item-h3">Zinger Pro Burger</h3>
+      <br>
+      <p class="item-p">Crispy, spicy chicken fillet layered with melted cheese, fresh lettuce, and tangy sauce.
+A powerhouse of bold flavors and satisfying textures, crafted for the ultimate burger experience.
+(ZINGER PRO BURGER 275 g 620 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 249</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food6.avif" height="250px" width="250px">
+      <h3 class="item-h3">Peri Peri Chicken Strips - 3 pc</h3>
+      <br>
+      <p class="item-p">Crispy, spicy chicken strips tossed in fiery peri peri sauce for a bold kick.
+A crunchy, flavourful snack crafted to fire up your appetite.
+(PERI PERI CHICKEN STRIPS 3 PC 180 g 400 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 179</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="food2.jpg" height="250px" width="250px">
+      <h3 class="item-h3">Sandwich</h3>
+      <br>
+      <p class="item-p">Freshly baked bread filled with crisp veggies, savory spreads, and your choice of filling.
+A light, wholesome bite crafted for flavour, crunch, and comfort anytime.
+(SANDWICH 200 g 350 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 132</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+  </nav>
+  <footer>
+    &copy; 2025 Cravory Cafe. All rights reserved. | Crafted with love by Cravory Team
+  </footer>
+
+</body>
+</html>

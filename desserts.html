@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Bestsellers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #fff3e0, #fef7f0);
+      color: #4b3f2f;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    header {
+      background: #d2691e;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top:0;
+      z-index: 100;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      margin-right: 10px;
+    }
+    .logo img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      filter: drop-shadow(4px 4px 5px rgba(223, 218, 218, 0.3));
+      margin-right: 20px;
+    }
+    .logo:hover {
+      transform: scale(1.1) ;
+    }
+    .nav-hov {
+      display: flex;
+    }
+    .nav-hov a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    .nav-hov a:hover {
+      background: #f4a261;
+      color: #4b3f2f;
+      transform: scale(1.3);
+    }
+
+    .welcome {
+      height: 500px;
+      background: url('cover.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      transform: scale(0.95) translateY(30px);
+      filter: blur(4px);
+      animation-name: photo;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-delay: 1s;
+    }
+    @keyframes photo {
+      to {
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+
+    footer {
+      background: #d2691e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+    .link{
+        text-decoration: none;
+    }
+    .circle-link{
+        border:1px solid black;
+        border-radius: 50%;
+        
+    }
+    .circles{
+        display: flex;
+        padding: 10px;
+    }
+    .item{
+        height:300px;
+        width:650px;
+        border: 3px solid #2A4759;
+        outline: 1px solid #2A4759;
+        outline-offset: -7px;
+        margin-left:100px;
+        margin-top: 50px;
+        padding:25px;
+    }
+   
+    .items{
+        display: flex;
+        justify-content: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .item-h3{
+      margin-left: 320px; 
+      margin-top: -250px; 
+      color:steelblue;
+    }
+    .item-p{
+      margin-left: 280px; 
+      text-align:justify; 
+      color: black;
+    }
+    .item-cost{
+      margin-left:290px; 
+      margin-top: 30px; 
+      color:#328E6E;
+    }
+    .item-a{
+      text-decoration: none;
+    }
+    .item-div{
+      margin-left: 380px; 
+      margin-top: -25px; 
+      border: 1px solid none; 
+      width: 125px; 
+      padding: 5px; 
+      color:white; 
+      background-color: #328E6E;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="home.html" class="logo">
+      <img src="logo.jpg" alt="Cravory Cafe Logo">
+      Cravory Cafe
+    </a>
+    <nav class="nav-hov">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="offers.html">Offers</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </nav>
+  </header>
+
+  <nav class="circles">
+    <a href="bestsellers.html" class="link">
+        <img src="pizzza.jpg" height="80" width="80" class="circle-link" style="margin-left: 350px;"><p style="color: black; margin-left: 345px;">Bestsellers</p>
+    </a><a href="coffee.html" class="link">
+        <img src="coffee.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 55px;">Coffee</p>
+    </a><a href="food.html" class="link">
+        <img src="burger.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 60px;">Food</p>
+    </a><a href="bevarages.html" class="link">
+        <img src="mocktail.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 40px;">Bevarages</p>
+    </a><a href="desserts.html" class="link">
+        <img src="icecream.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 45px;">Desserts</p>
+    </a><a href="deals.html" class="link">
+        <img src="combos.jpg" height="80" width="80" class="circle-link" style="margin-left: 40px;"><p style="color: black; margin-left: 20px;">Exclusive Deals</p>
+    </a>
+  </nav>
+  <nav class="items">
+
+
+
+    <div class="item">
+      <img src="dessert2.avif" height="250px" width="250px">
+      <h3 class="item-h3">Apricot Delight</h3>
+      <br>
+      <p  class="item-p">A refreshing fusion of sweet apricot puree and chilled juice, bursting with fruity goodness.
+Light, smooth, and crafted to delight your senses with every sip.
+(APRICOT DELIGHT 300 ml 130 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 300</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert3.avif" height="250px" width="250px">
+      <h3 class="item-h3">Cream Cheese Kunafa</h3>
+      <br>
+      <p  class="item-p">Dark, Rich in flavour espresso lies in wait under a smoothed and stretched layer of thick foam. It's truly the height of our baristas' craft.(PICCO 180 ml 95 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 319</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert4.avif" height="250px" width="250px">
+      <h3 class="item-h3">Choco Brownie Sundae</h3>
+      <br>
+      <p  class="item-p">Layers of rich chocolate sauce, fudgy brownie chunks, and creamy vanilla ice cream.
+A decadent dessert crafted for ultimate chocolate indulgence in every spoonful.
+(CHOCO BROWNIE SUNDAE 200 g 420 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 160</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert6.avif" height="250px" width="250px">
+      <h3 class="item-h3">Caramel Egg Pudding</h3>
+      <br>
+      <p  class="item-p">Silky smooth egg pudding topped with a glossy layer of rich caramel sauce.
+A classic, melt-in-your-mouth dessert crafted for delicate sweetness and comfort.
+(CARAMEL EGG PUDDING 150 g 220 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 149</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert7.jpg" height="250px" width="250px">
+      <h3 class="item-h3">KitKat Heaven Waffle</h3>
+      <br>
+      <p  class="item-p">Warm, fluffy waffle topped with crushed KitKat, drizzled with chocolate sauce and served with ice cream.
+A crunchy, chocolaty delight crafted for heavenly indulgence in every bite.
+(KITKAT HEAVEN WAFFLE 250 g 520 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 180</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+    <div class="item">
+      <img src="dessert5.webp" height="250px" width="250px">
+      <h3 class="item-h3">Lotus Biscoff Sundae</h3>
+      <br>
+      <p  class="item-p">Creamy vanilla ice cream layered with crunchy Biscoff crumbs and luscious caramel sauce.
+A rich, spiced treat crafted for irresistible flavour and smooth, crunchy delight.
+(LOTUS BISCOFF SUNDAE 200 g 430 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 160</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert1.jpg" height="250px" width="250px">
+      <h3 class="item-h3">Chocolate Icecream</h3>
+      <br>
+      <p  class="item-p">Lusciously creamy and packed with deep, indulgent chocolate flavour in every scoop.
+A timeless treat, smooth and satisfying, crafted to melt your heart.
+(CHOCOLATE ICE CREAM 100 g 210 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 100</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+    <div class="item">
+      <img src="dessert8.jpg" height="250px" width="250px">
+      <h3 class="item-h3">Double Ka Meetha</h3>
+      <br>
+      <p  class="item-p">A rich Hyderabadi dessert made from fried bread soaked in saffron-infused milk and garnished with dry fruits.
+Warm, syrupy, and crafted for a royal, melt-in-the-mouth experience.
+(DOUBLE KA MEETHA 200 g 360 kcal)</p>
+      <br>
+      <h3 class="item-cost">Rs 129</h3>
+      <a href="" class="item-a"><div class="item-div">ADD TO CART</div></a>
+    </div>
+
+
+
+  </nav>
+  <footer>
+    &copy; 2025 Cravory Cafe. All rights reserved. | Crafted with love by Cravory Team
+  </footer>
+
+</body>
+</html>
